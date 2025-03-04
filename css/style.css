@@ -470,9 +470,17 @@
   margin-bottom: 22px;
 }
 
-.new-image-card {
-  width: 70px;
+.new-post-image {
+  min-width: 70px;
+  min-height: 70px;
   display: block;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #eff6f1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .new-card {
@@ -1203,5 +1211,11 @@
     margin-top: -5px;
     width: 24px;
     text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .news-image {
+    min-width: 381px;
   }
 }
