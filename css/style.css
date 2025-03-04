@@ -532,7 +532,7 @@
 }
 
 .field:focus {
-  border: 1px solid #b59f5b;
+  outline: 1px solid #b59f5b;
 }
 
 .button-search {
