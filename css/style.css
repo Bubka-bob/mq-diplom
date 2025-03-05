@@ -1060,11 +1060,7 @@
     width: 269px;
     order: 1;
     }
-  
-  .menu {
-    display: none;
-  }
-  
+    
   .header-container {
     padding: 34px 15px 210px 15px;
   }
@@ -1206,6 +1202,10 @@
 }
 
 @media (max-width: 1200px) {
+  .menu-list {
+    display: none;
+  }
+  
   .menu-burger { 
     display: block;
     position: relative;
