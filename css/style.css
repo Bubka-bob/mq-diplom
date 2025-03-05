@@ -1207,12 +1207,33 @@
 
 @media (max-width: 1200px) {
   .menu-burger { 
-  display: block;
-    margin-top: -5px;
-    width: 24px;
-    text-align: center;
-  }
+    display: block;
+    position: relative;
+    width: 23px;
+    height: 19px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
+  .menu-burger::before, .menu-burger::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #ffffff;
+}
+  .mebu-burger-label {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+}
+  }
 
 @media (min-width: 1200px) {
   .news-image {
