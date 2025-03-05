@@ -1205,8 +1205,11 @@
   .menu-list {
     display: none;
   }
-  
-  .menu-burger { 
+    .menu {
+    display: flex;
+    align-items: center;
+}
+    .menu-burger { 
     display: block;
     position: relative;
     width: 23px;
@@ -1215,24 +1218,33 @@
     background: transparent;
     cursor: pointer;
 }
-  .menu-burger::before, .menu-burger::after {
+  .menu-burger::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 3px;
     left: 0;
     top: 0;
-    bottom: 0;
     background-color: #ffffff;
 }
-  .mebu-burger-label {
+    .menu-burger::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    } 
+    
+  .menu-burger-label {
     position: absolute;
     top: 8px;
     left: 0;
     width: 100%;
     height: 3px;
     background-color: #ffffff;
-}
+    }
   }
 
 @media (min-width: 1200px) {
